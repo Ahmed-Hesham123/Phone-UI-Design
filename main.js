@@ -1,0 +1,1 @@
+let timeText=document.querySelector(".timeText"),dateText=document.querySelector(".dateText"),dateAndTime=()=>{let e=new Date;timeText.innerHTML=`${10>e.getHours()?"0":""}${e.getHours()}:${10>e.getMinutes()?"0":""}${e.getMinutes()}`,dateText.innerHTML=`${e.toUTCString().slice(0,16)}`};setInterval(()=>{dateAndTime()},1e3);
